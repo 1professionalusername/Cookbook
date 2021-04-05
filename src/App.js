@@ -1,27 +1,22 @@
-import React from 'react';
+import React from 'react'
+import { Route, Switch } from "react-router-dom"
 import Home from './components/Home'
 import About from './components/About'
-import Links from './components/Links'
 import Nav from './components/Nav'
-import Header from './components/Header';
-
-
-//import './App.css';
-
-
-// Switch groups all your routes together and ensures they take precidence from top to bottom
-
 
 
 function App() {
   return (
-    <div className='App_routes'>
-      <Home />
-      <About />
-      <Header />
+    <main>
+
+      {/* Switch groups all your routes together and ensures they take precidence from top to bottom */}
+      {/* Exact is necessary because the other URLs also contain '/', which could cause bugs*/}
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
+      </Switch>
       <Nav />
-      <Links />
-    </div>
+    </main>
 
   )
 }
