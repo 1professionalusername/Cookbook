@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
-import './style.css';
+import './style.scss';
 // BrowserRouter is a type of route provided by React Router
 // I renamed it Router because it is shorter than BrowserRouter, but we can name it whatever we want
 // It builds classic URLs and uses the History API
