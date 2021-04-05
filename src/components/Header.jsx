@@ -1,12 +1,12 @@
 import React from 'react'
-import styles from '../'
+
 
 
 
 function Header() {
     return (
         <div className='container'>
-            <h1>Header</h1>
+            <h1 className='title'>Steal This Cookbook</h1>
         </div>
     )
 }
