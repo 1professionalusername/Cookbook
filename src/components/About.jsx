@@ -3,8 +3,9 @@ import React from 'react'
 
 function About() {
     return (
-        <div className='container'>
-            <h1 className='about'>About</h1>
+        <div className='about'>
+            <h1>About Page</h1>
+            <p>This will be all about how our cookbook came to be</p>
         </div>
     )
 }
